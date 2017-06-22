@@ -34,9 +34,9 @@ public class NewTask {
     }
 
    public static String getMessage(String[] strings) {
-        if (strings.length < 1)
+       // if (strings.length < 1)
             return "Hello World!";
-        return joinStrings(strings, " ");
+      //  return joinStrings(strings, " ");
     }
     public static String joinStrings(String[] strings, String delimiter) {
         int length = strings.length;

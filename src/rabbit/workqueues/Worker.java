@@ -41,11 +41,15 @@ public class Worker {
     }
 
     private static void doWork(String task) {
+        try {
+            Thread.sleep(3000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         for (char ch : task.toCharArray()) {
             if (ch == '.') {
                 try {
-                    Thread.sleep(1000);
-                    System.out.println("sleep 1s ");
+                    Thread.sleep(3000);
                 } catch (InterruptedException _ignored) {
                     Thread.currentThread().interrupt();
                 }
